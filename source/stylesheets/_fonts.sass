@@ -1,8 +1,15 @@
 // Important local font
-// +font-face(CoreSansM35Light, '../../fonts/271843_0_0')
++font-face(PlutoSansCondLight, '../../fonts/268433_9_0')
++font-face(PlutoSansBold, '../../fonts/268433_4_0')
+
 
 // Alternative way to import font from Google
 // @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700)
 
 // Define helpers
-// =custom-sans($weight: normal, $style: regular)
+=custom-sans($weight: light)
+  @if $weight == bold
+    font-family: PlutoSansBold, Helvetica, Arial, sans-serif
+  @else
+    font-family: PlutoSansCondLight, Helvetica, Arial, sans-serif
+  font-weight: normal

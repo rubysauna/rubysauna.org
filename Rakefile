@@ -1,8 +1,8 @@
 dev = OpenStruct.new({
   :ssh_user    => "polarbla@polarblau.com",
   :local_root  => "./build/",
-  :remote_root => "public_html/PATH",
-  :public_url  => "http://www.polarblau.com/PATH/"
+  :remote_root => "public_html/rubysauna",
+  :public_url  => "http://rubysauna.org/"
 })
 
 desc "Deploy 'deploy' dir to #{dev.ssh_user}:#{dev.remote_root}"
