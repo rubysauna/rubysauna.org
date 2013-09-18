@@ -1,13 +1,33 @@
-## middleman-template
+# rubysauna.org
 
-A middleman template just for me. Uses Haml, Sass, Bourbon, Neat, Livereload etc. and comes with some examples and settings.
+In this repository you'll find the website for rubysauna.org.
 
-### Installation
- 
-Clone the template into `~/.middleman`. You will need to create this directory if it doesn't exist.
+Install
+-------
 
-```bash
-$ git clone git://github.com/polarblau/middleman-template.git ~/.middleman/middleman-polarblau
-```
+Provided you have RVM installed, installation should require **4 Steps**:
 
-Initialize middleman on a new or existing folder `$ middleman init PATH --template=middleman-polarblau`
+    rvm 1.9.3
+    rvm gemset create middleman
+    gem install bundler
+    bundle install
+
+Running
+-------
+
+### Building static pages
+
+You can build the site into a `build`-directory:
+
+    bundle exec middleman build
+
+The `build` directory will contain the generated HTML, CSS and JavaScript and
+the contents can be uploaded to any standard web server.
+
+### With the built-in server
+
+To run:
+
+    bundle exec middleman server
+
+You will see the generated HTML & CSS by navigating to <http://localhost:4567/>.
