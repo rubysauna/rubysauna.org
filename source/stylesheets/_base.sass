@@ -29,8 +29,10 @@ a, a:visited
 html.js
   #container
     opacity: 0
+    +backface-visibility(hidden)
     +transition(all 1s ease-in-out)
     +transform(scale(0.95))
+    +transform-style(preserve-3d)
 
   #background img
     opacity: 0
