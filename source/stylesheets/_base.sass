@@ -26,12 +26,38 @@ a, a:visited
     display: block
     text-shadow: 0 -1px 0 transparentize($black, 0.2)
 
-img.background
+html.js
+  #container
+    opacity: 0
+    +transition(all 1s ease-in-out)
+    +transform(scale(0.95))
+
+  #background img
+    opacity: 0
+    +transform(scale(1.1))
+    +transition(all 1.5s ease-in-out)
+
+  body.reveal
+    #container,
+    #background img
+      opacity: 1
+      +transform(scale(1))
+
+#background
   width: 100%
   position: absolute
   top: 0
   right: 0
+  bottom: 0
+  left: 0
+  overflow: hidden
   z-index: 0
+
+  img
+    width: 100%
+    position: absolute
+    top: 0
+    right: 0
 
 header,
 article,
@@ -89,5 +115,6 @@ footer
     margin: 6em 0 0 0
 
 +media($mini-tablet)
-  img.background
-    width: percentage(3/4)
+  #background
+    img
+      width: percentage(3/4)

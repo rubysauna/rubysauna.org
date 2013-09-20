@@ -4,6 +4,9 @@
     = partial "partials/document_head"
 
   %body{:class => current_page.data.body_class || 'page'}
+    #background
+      = image_tag "background.jpg", :alt => ""
+
     #container
       = partial 'partials/header'
 

@@ -1,16 +1,20 @@
 $ = jQuery
 
-$.fn.preload = (onSuccess, onError)->
+$.fn.preload = (onSuccess, onError, allComplete)->
 
-  $(@).each ->
+  $set  = @
+  total = $set.length
 
+  finalize = ->
+    if --total is 0 and allComplete?
+      allComplete.apply($set)
+
+  $set.each ->
     $img = $(@)
-    $img.css 'opacity', 0
 
     $ '<img/>',
       src  : @.src
-      load : ->
-        if onSuccess? then onSuccess.apply(@)
-        else $img.animate { 'opacity': 1 }, 2000
-      error: ->
-        onError.apply(@) if onError?
+      load : -> onSuccess.apply($img) if onSuccess?
+      error: -> onError.apply($img) if onError?
+      complete: finalize
+
