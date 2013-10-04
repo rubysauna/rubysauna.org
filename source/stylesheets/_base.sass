@@ -1,123 +1,43 @@
 html
   background: $black
+  min-height: 100%
 
 body
   color: $white
-  padding: 0 20px
-  +custom-sans
-
-a, a:visited
-  color: $white
-  text-decoration: none
-  +transition(all 0.15s ease-in-out)
-
-  &:hover
-    opacity: 0.75
-
-  &.button
-    background: $red
-    +custom-sans(bold)
-    border-radius: 1px
-    color: $white
-    text-transform: uppercase
-    height: 40px
-    line-height: 40px
-    width: 100%
-    display: block
-    text-shadow: 0 -1px 0 transparentize($black, 0.2)
-
-html.js
-  #container
-    opacity: 0
-    +backface-visibility(hidden)
-    +transition(all 1s ease-in-out)
-    +transform(scale(0.95))
-    +transform-style(preserve-3d)
-
-  #background img
-    opacity: 0
-    +backface-visibility(hidden)
-    +transform(scale(1.1))
-    +transition(all 1.5s ease-in-out)
-
-  body.reveal
-    #container,
-    #background img
-      opacity: 1
-      +transform(scale(1))
-
-#background
-  width: 100%
-  position: absolute
-  top: 0
-  right: 0
-  bottom: 0
-  left: 0
-  overflow: hidden
-  z-index: 0
-
-  img
-    width: 100%
-    position: absolute
-    top: 0
-    right: 0
-
-header,
-article,
-footer
-  text-align: center
-  z-index: 1
+  min-height: 100%
   position: relative
-
-header
-  margin: 2em 0 0 0
-
-  h1
-    img
-      width: 100%
-
-p.action
-  margin: 3em 0
-
-  small
-    text-transform: uppercase
-
-footer
-  margin: 3em 0
+  padding: 0 20px
+  +sans
 
   &:before
+    display: none
+
+  &.grid
+    &:before
+      display: block
+
+a, a:visited, .link
+  color: $red
+  text-decoration: none
+  border-bottom: 1px solid $red
+  +transition(color 0.15s ease-out)
+
+a:hover, .link:hover
+  border-bottom: none
+  color: lighten($red, 10%)
+
+h3
+  +with-font-size(24px)
+  text-align: center
+  text-transform: uppercase
+
+  &:after
     @extend %divider
+    +with-font-size(16px, 24px)
+      margin: relative(16px auto 15px)
 
-  ul
-    @extend %unlisted
 
-  li
-    margin: 0 10px
-    +inline-block
+#container
+  +outer-container
+  z-index: 2
 
-  img
-    width: 24px
-    height: 24px
-
-// ---
-
-+media(min-width 240px)
-  p.action
-    a.button
-      width: 200px
-      margin: 0 auto 0.5em
-
-+media(min-width 290px)
-  header
-    h1
-      img
-        width: 250px
-
-+media(min-height 500px)
-  header
-    margin: 6em 0 0 0
-
-+media($mini-tablet)
-  #background
-    img
-      width: percentage(3/4)

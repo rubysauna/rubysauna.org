@@ -1,0 +1,28 @@
+#sponsors
+  text-align: center
+  clear: both
+  +with-font-size
+    padding: relative(64px 0 0)
+
+  h5
+    color: $gray
+    text-transform: uppercase
+    +with-font-size(14px)
+      line-height: relative(24px)
+      padding: relative(16px 0)
+      border-bottom: 1px solid $very-dark-red
+
+  a
+    border: none
+
+  ul
+    @extend %unlisted
+
+  li
+    +inline-block
+    +with-font-size
+      height: relative(56px)
+      padding: relative(0 $padding)
+
+    img
+      vertical-align: middle

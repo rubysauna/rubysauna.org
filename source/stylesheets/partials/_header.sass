@@ -1,0 +1,117 @@
+#header
+  text-align: center
+  z-index: 2
+  +with-font-size
+    padding: relative(48px 0 0)
+
+  h1
+    margin: 0
+
+    img
+      width: 120px
+
+  h2
+    +sans
+    text-transform: uppercase
+    letter-spacing: -0.05em
+    text-shadow: 0 0 15px transparentize($black, 0.25)
+    +with-font-size(32px)
+      line-height: relative(32px)
+      margin: relative(40px 0 0)
+
+    &:after
+      @extend %divider
+      +with-font-size(16px, 52px)
+        margin: relative(24px auto 23px)
+
+    br
+      display: none
+
+  p.meta
+    text-shadow: 0 0 10px transparentize($black, 0.25)
+    +serif(light, italic)
+    +with-font-size(18px)
+      margin: 0
+
+  p.action
+    +with-font-size
+      margin: relative(40px 0 0)
+
+    a
+      +inline-block
+      +sans(bold)
+      text-transform: uppercase
+      color: $white
+      border: none
+      background: transparentize($red, 0.15)
+      border-radius: 2px
+      text-shadow: 0 -1px 0 $very-dark-red
+      +transition(all 0.25s ease-out)
+      box-shadow: 0 2px 3px transparentize($black, 0.75)
+      +with-font-size(18px)
+        padding: relative(17px 40px 16px)
+        line-height: relative(24px)
+
+      &:hover
+        background: $very-dark-red
+
+  .background
+    display: none
+    position: absolute
+    width: 100%
+    overflow: hidden
+    z-index: -1
+    top: 0
+    left: 0
+
+    img
+      width: 200%
+      margin: 0 0 0 -50%
+
+  // ---
+
+  +media($mobile)
+    +with-font-size
+      padding: relative(96px 0 0)
+
+    h2
+      +sans(thin)
+      +with-font-size(48px)
+        line-height: relative(40px)
+        margin: relative(80px 0 0)
+
+      br
+        display: block
+
+    .background
+      display: block
+
+
+  +media($mini-tablet)
+    .background
+      img
+        width: 150%
+        margin: 0 0 0 -25%
+
+    p.meta
+      +with-font-size(24px)
+
+
+  +media($tablet)
+    h2
+      +with-font-size(64px)
+        line-height: relative(56px)
+        margin: relative(80px 0 0)
+
+
+  +media($full)
+    +with-font-size
+      padding: relative(128px 0 0)
+
+
+  +media($max)
+    .background
+      img
+        width: 1400px
+        margin: 0 auto
+

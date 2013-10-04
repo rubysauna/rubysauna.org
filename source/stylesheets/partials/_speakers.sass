@@ -1,0 +1,84 @@
+#speakers
+  clear: both
+  +with-font-size
+    padding: relative(88px 0 0)
+
+  ul
+    @extend %unlisted
+    @extend %clearfix
+    +with-font-size
+      margin: relative(64px 0 0)
+
+  li
+    +with-font-size
+      margin: relative(0 0 48px)
+
+    .head
+      text-align: center
+
+    img.portrait
+      width: 100px
+      border-radius: 50%
+
+    h4
+      +with-font-size(24px)
+        margin: relative(24px 0 0)
+      text-transform: uppercase
+      color: $red
+
+      a
+        border: none
+
+      img
+        vertical-align: middle
+        +inline-block
+        +with-font-size(24px, 24px)
+          margin: relative(0 0 3px 0)
+
+    p.meta
+      +serif(light, italic)
+      +with-font-size(14px)
+      margin: 0
+
+    p.topic
+      +sans(bold)
+      border-top: 1px solid $very-dark-red
+      border-bottom: 1px solid $very-dark-red
+      +with-font-size
+        padding: relative(8px)
+        line-height: relative(20px)
+        margin: relative(24px 0)
+
+    p.bio
+      color: $gray
+      text-align: left
+      padding: 0 $padding
+      +with-font-size
+        line-height: relative(22px)
+
+
+  // ---
+
+  +media($mobile)
+    li
+      +span-columns(1.5)
+      +shift(0.25)
+
+
+  +media($mini-tablet)
+    li
+      +span-columns(2)
+      +shift(0)
+      +omega(2n)
+
+
+  +media($tablet)
+    li
+      +span-columns(2)
+      +omega-reset(2n, 6)
+      +omega(3n)
+
+
+  +media($full)
+    li
+      +span-columns(2)

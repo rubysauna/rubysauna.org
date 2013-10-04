@@ -1,22 +1,33 @@
 @import "vendor/neat/neat-helpers"
 
 // Colors
-$black           : #000000
+$black           : #010000
 $white           : #ffffff
-$red             : #8c2a01
+$gray            : #a5a3a3
+$light-gray      : #cecccc
+$red             : #d62819
+$very-dark-red   : #470e0a
 
 // Grid
 $padding         : 15px
-$column          : 80px + $padding * 2
-$gutter          : 0px
-$grid-columns    : 6
-$max-width       : em(1080)
+$column          : 185px
+$gutter          : $padding * 2
+$grid-columns    : 2
+$max-width       : em(1110)
 
-$visual-grid     : false
+$fg-column       : $column
+$fg-gutter       : $gutter
+
+$visual-grid-opacity: 0.1
+$visual-grid-index: 1
+$visual-grid-color: #ff00ff
+$visual-grid     : true
 
 // "Breakpoints" for neat
 $mobile          : new-breakpoint(min-width 480px 2)
 $mini-tablet     : new-breakpoint(min-width 600px 4)
-$tablet          : new-breakpoint(min-width 768px 8)
+$tablet          : new-breakpoint(min-width 768px 6)
+$full            : new-breakpoint(min-width $max-width 6)
+$max             : new-breakpoint(min-width 1400px 6)
 
 $image-path      : '../../images/'

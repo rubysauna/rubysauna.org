@@ -1,6 +1,16 @@
 %footer#footer
+  .background
+    = image_tag "footer/background.jpg", :alt => ""
+
   %ul
     - %w(twitter facebook).each do |page|
       %li
         %a(href="http://#{page}.com/rubysauna" title="Join us!")
           = image_tag "#{page}@2x.png"
+
+  %p
+    Contact us via
+    = succeed "." do
+      %a(href="mailto:info@rubysauna.org" title="Send mail")
+        email
+

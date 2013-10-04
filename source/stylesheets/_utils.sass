@@ -11,3 +11,10 @@
 
 @function image-url($image)
   @return url(#{$image-path}#{$image})
+
+=omega-reset($nth, $cols: 1)
+  &:nth-child(#{$nth})
+    margin-right: flex-gutter($cols)
+
+  &:nth-child(#{$nth}+1)
+    clear: none

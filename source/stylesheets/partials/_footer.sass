@@ -1,0 +1,55 @@
+#footer
+  clear: both
+  text-align: center
+  +with-font-size
+    padding: relative(48px 0 24px)
+
+  ul
+    @extend %unlisted
+
+  li
+    +inline-block
+
+    a
+      border: none
+
+    img
+      width: 24px
+      vertical-align: middle
+
+
+  .background
+    display: none
+    position: absolute
+    width: 100%
+    overflow: hidden
+    z-index: -1
+    bottom: 0
+    left: 0
+
+    img
+      width: 200%
+      margin: 0 0 0 -50%
+
+  // ---
+
+  +media($mobile)
+    .background
+      display: block
+
+
+  +media($mini-tablet)
+    .background
+      img
+        width: 150%
+        margin: 0 0 0 -25%
+
+
+  +media($max)
+    .background
+      width: 100%
+      margin: 0 auto
+
+      img
+        width: 1400px
+        margin: 0

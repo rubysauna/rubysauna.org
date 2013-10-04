@@ -1,0 +1,54 @@
+#venue
+  clear: both
+  +with-font-size
+    padding: relative(64px 0 0)
+
+  figure
+    +with-font-size
+      margin: relative(56px 0 24px)
+
+  .program
+    dl
+      margin: 0
+
+    dt
+      +sans(bold)
+      +with-font-size
+        line-height: relative(22px)
+
+    dd
+      +serif(thin, italic)
+      +with-font-size
+        margin: relative(0 0 22px)
+        line-height: relative(22px)
+
+  .venue
+    p
+      +serif(thin, italic)
+      +with-font-size
+        margin: relative(0 0 22px)
+        line-height: relative(22px)
+
+      &.inline
+        margin: 0
+
+    address
+      font-style: normal
+      +with-font-size
+        margin: relative(0 0 22px)
+        line-height: relative(22px)
+      +sans(light)
+
+
+  // ---
+
+  +media($mini-tablet)
+    .program,
+    .venue
+      +span-columns(2 of 4)
+
+
+  +media($tablet)
+    +span-columns(4)
+    +shift(1)
+

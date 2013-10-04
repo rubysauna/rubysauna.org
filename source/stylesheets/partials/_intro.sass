@@ -1,0 +1,60 @@
+#intro
+  text-align: center
+  padding: 0 $padding
+  +serif(thin)
+  +with-font-size(14px)
+    margin: relative(48px 0 0)
+    line-height: relative(18px)
+
+  p.primary
+    +serif(light, normal)
+    text-shadow: 0 0 15px transparentize($black, 0.25)
+    +with-font-size(18px, 14px)
+      line-height: relative(24px)
+
+  p.powered
+    +sans(thin)
+    text-shadow: 0 0 10px transparentize($black, 0.25)
+    text-transform: uppercase
+    color: $light-gray
+    +with-font-size(14px, 18px)
+      margin: relative(24px 0 0)
+
+    a
+      border: none
+
+    img
+      width: 180px
+      +with-font-size
+        margin: relative(10px 0 12px)
+
+  // ---
+
+  +media($mini-tablet)
+    +with-font-size(18px)
+      margin: relative(64px 0 0)
+
+
+  +media($tablet)
+    +span-columns(4)
+    +with-font-size(18px)
+      +shift(1)
+      line-height: relative(28px)
+
+    p.primary
+      +serif(light, normal)
+      +with-font-size(24px)
+        line-height: relative(30px)
+
+
+  +media($full)
+    +with-font-size(18px)
+      margin: relative(112px 0 0)
+      +shift(1)
+
+
+  +media($max)
+    +with-font-size(18px)
+      margin: relative(64px 0 0)
+      +shift(1)
+
