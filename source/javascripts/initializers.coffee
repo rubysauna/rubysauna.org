@@ -5,7 +5,8 @@ $ ->
 
   allComplete =->
     $body.addClass('reveal')
-    $(this).animate {opacity: 1}, 2000, flicker
+    $(this).css('opacity', 1)
+    setTimeout flicker, 4000
 
   flicker =->
     opacity  = Math.min(1, Math.random() + 0.6)
@@ -14,7 +15,6 @@ $ ->
 
   $background
     .find('img')
-    .css('opacity', 0)
     .preload(null, null, allComplete)
 
 
