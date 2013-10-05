@@ -11,7 +11,14 @@ $ ->
   flicker =->
     opacity  = Math.min(1, Math.random() + 0.6)
     duration = Math.random() * 500 + 250
-    $background.animate {opacity}, duration, flicker
+
+    style = for prefix in ['', '-webkit-', '-moz-']
+      "#{prefix}transition-duration: #{duration / 1000}s"
+    style.push "opacity: #{opacity}"
+    # should be slightly more efficient than $.css
+    $background.attr 'style', style.join(';')
+
+    setTimeout flicker, duration
 
   $background
     .find('img')

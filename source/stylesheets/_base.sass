@@ -1,6 +1,7 @@
 html
   background: $black
   min-height: 100%
+  +transition-duration(3s)
 
 body
   color: $white
@@ -15,6 +16,12 @@ body
   &.grid
     &:before
       display: block
+
+::selection
+  background: $red
+
+::-moz-selection
+  background: $red
 
 a, a:visited, .link
   color: $red
