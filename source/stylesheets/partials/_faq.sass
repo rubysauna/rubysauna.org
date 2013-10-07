@@ -1,9 +1,33 @@
 #faq
   clear: both
-  h4
+  +with-font-size
+    padding: relative(64px 0 0)
+
+  dl
+    +with-font-size
+      margin: relative(56px 0 24px)
+
+  dt
     +sans(bold)
-    +with-font-size(10px)
-  p
-    +with-font-size(10px)
-    +serif
-    text-transform: none
+    +with-font-size
+      line-height: relative(22px)
+
+  dd
+    +serif(thin, italic)
+    +with-font-size
+      margin: relative(0 0 22px)
+      line-height: relative(22px)
+
+
+
+  // ---
+
+  +media($mini-tablet)
+    dl
+      +span-columns(2 of 4)
+
+
+  +media($tablet)
+    +span-columns(4)
+    +shift(1)
+
