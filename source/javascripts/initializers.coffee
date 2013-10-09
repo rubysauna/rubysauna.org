@@ -22,6 +22,7 @@ $ ->
 
   $background
     .find('img')
+    .css('opacity', 0)
     .preload(null, null, allComplete)
 
 
