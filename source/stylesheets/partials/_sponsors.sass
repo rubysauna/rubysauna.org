@@ -1,6 +1,7 @@
 #sponsors
   text-align: center
   clear: both
+  position: relative
   +with-font-size
     padding: relative(64px 0 0)
 
@@ -22,7 +23,18 @@
     +inline-block
     +with-font-size
       height: relative(56px)
+      line-height: relative(56px)
       padding: relative(0 $padding)
 
     img
       vertical-align: middle
+
+  // ---
+
+  +media($mini-tablet)
+
+  +media($tablet)
+    ul
+      +span-columns(4)
+      +shift(1)
+
