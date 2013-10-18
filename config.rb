@@ -9,6 +9,9 @@ set :partials_dir, 'partials'
 # Livereload
 activate :livereload
 
+# Pretty URLs
+activate :directory_indexes
+
 # Build-specific configuration
 configure :build do
 
