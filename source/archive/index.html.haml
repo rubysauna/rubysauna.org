@@ -1,0 +1,6 @@
+ARCHIVE
+
+%ul
+  - archived_events.each do |event|
+    %li
+      = link_to "EVENT", event_path(event)

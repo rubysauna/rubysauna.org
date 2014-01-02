@@ -1,3 +1,7 @@
+# explicitely load helpers so we can use them below
+require "helpers/event_helpers"
+helpers EventHelpers
+
 # Assets
 set :css_dir,     'stylesheets'
 set :js_dir,      'javascripts'
@@ -21,3 +25,9 @@ configure :build do
   activate :gzip
 
 end
+
+archived_events.each do |event|
+  proxy event_path(event), "/archive/event.html", :locals => event
+end
+
+ignore "/archive/event.html"
