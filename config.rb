@@ -25,9 +25,3 @@ configure :build do
   activate :gzip
 
 end
-
-archived_events.each do |event|
-  proxy event_path(event), "/archive/event.html", :locals => event
-end
-
-ignore "/archive/event.html"
