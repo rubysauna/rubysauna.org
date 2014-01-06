@@ -13,3 +13,21 @@
   +with-font-size
     margin: 2em auto
   position: relative
+
+%button
+  +sans(bold)
+  text-transform: uppercase
+  color: $white
+  border: none
+  background: transparentize($red, 0.15)
+  border-radius: 2px
+  text-shadow: 0 -1px 0 $very-dark-red
+  +transition(all 0.25s ease-out)
+  box-shadow: 0 2px 3px transparentize($black, 0.75)
+  +with-font-size(18px)
+    padding: relative(17px 40px 16px)
+    line-height: relative(24px)
+
+  &:hover
+    background: $very-dark-red
+
