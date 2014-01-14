@@ -20,9 +20,29 @@ body.sponsorship
 
       td, th
         border-right: 1px solid $very-dark-red
+        position: relative
 
         &:last-child
           border-right: none
+
+        .sold
+          position: absolute
+          top: 0
+          left: 0
+          width: 100%
+          height: 100%
+          background: transparentize($red, 0.2)
+          text-align: center
+          display: table-cell
+          vertical-align: middle
+          color: $white
+          +sans(bold)
+          text-transform: uppercase
+
+          span
+            display: block
+            +transform(rotate(-20deg))
+            margin-top: 0.7em
 
       td
         &.yes
