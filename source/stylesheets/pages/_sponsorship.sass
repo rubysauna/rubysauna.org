@@ -25,15 +25,9 @@ body.sponsorship
         &:last-child
           border-right: none
 
-        .sold
-          position: absolute
-          top: 0
-          left: 0
-          width: 100%
-          height: 100%
+        &.sold
           background: transparentize($red, 0.2)
           text-align: center
-          display: table-cell
           vertical-align: middle
           color: $white
           +sans(bold)
@@ -42,7 +36,7 @@ body.sponsorship
           span
             display: block
             +transform(rotate(-20deg))
-            margin-top: 0.7em
+            margin-top: 0.5em
 
       td
         &.yes
