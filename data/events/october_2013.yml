@@ -13,6 +13,8 @@ speakers:
     url: http://hawkins.io
     url_title: Hawkins.io
     remote: false
+    slides_url:
+    recording_url:
 
   - handle: ville
     name: Ville Kolehmainen
@@ -27,6 +29,8 @@ speakers:
     url: https://twitter.com/villek
     url_title: Twitter.com/villek
     remote: false
+    slides_url:
+    recording_url:
 
   - handle: avdi
     name: Avdi Grimm
@@ -42,6 +46,8 @@ speakers:
     url: https://avdi.org
     url_title: Avdi.org
     remote: true
+    slides_url:
+    recording_url:
 
   - handle: railsgirls
     name: Rails Girls
@@ -55,3 +61,5 @@ speakers:
     url: http://railsgirls.com/oulu
     url_title: Railsgirls.com/oulu
     remote: false
+    slides_url:
+    recording_url:
