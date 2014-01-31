@@ -1,4 +1,57 @@
 date: 2013-10-30
 
 speakers:
+  - handle: adam
+    name: Adam Hawkins
+    title: Platform Engineer
+    topic: "Ruby — <br />A wonderfully diverse ecosystem"
+    bio: |
+      Adam is a rubyist, rails guy, and general open source nerd.
+      He loves to contribute to open source projects he uses as well as
+      write his own. He scratches his own itches through hisopen source work.
+      When he’s not coding he travels and enjoys trance in very heavy doses.
+    url: http://hawkins.io
+    url_title: Hawkins.io
+    remote: false
 
+  - handle: ville
+    name: Ville Kolehmainen
+    title: Creative Director, Siili Solutions
+    topic: "Prototyping for scale <br />The process behind the new nokia.com"
+    bio: |
+      Ville is a hands-on creative director at Siili, a software powerhouse
+      in Helsinki. As a designer Ville's ambition is in efficient problem
+      solving and creating beautiful user experiences. In addition to design
+      and development work, Ville has written and co-authored large-scale
+      design and product development guidelines for companies like Outotec and Nokia.
+    url: https://twitter.com/villek
+    url_title: Twitter.com/villek
+    remote: false
+
+  - handle: avdi
+    name: Avdi Grimm
+    title: Chief Aeronaut at ShipRise
+    topic: "Ruby and the Ruby community <br />Live Video Q&A"
+    bio: |
+      Avdi Grimm has been hacking Ruby code for over 10 years, and is still
+      loving it. He is chief aeronaut at ShipRise, a consultancy specializing
+      in sustainable software development and in helping geographically dispersed
+      teams work more effectively. He lives in Southern Pennsylvania with his wife
+      and five children, and in his copious spare time blogs and podcasts at Virtuous
+      Code and Wide Teams.
+    url: https://avdi.org
+    url_title: Avdi.org
+    remote: true
+
+  - handle: railsgirls
+    name: Rails Girls
+    title: Represented by Annika Juvani
+    topic: "Introducing Rails Girls Oulu <br />Brought to you by OuluSES"
+    bio: |
+      Rails Girls organizes workshops globally for women with the aim to inspire
+      them to create things on the web. During the event they’ll learn the
+      basics of programming, software development and prototyping. Events are
+      non-profit and organized by volunteers.
+    url: http://railsgirls.com/oulu
+    url_title: Railsgirls.com/oulu
+    remote: false
