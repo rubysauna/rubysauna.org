@@ -19,10 +19,10 @@ layout: front_page
       %a(href="https://www.facebook.com/SocializingFriday" title="The Socializing Friday Facebook page")
         = image_tag "header/njetworking_logo@2x.png", :alt => "Njetworking"
 
-  - if true#upcoming_events.any?
-    - next_event = data.events.october_2013
-    = partial "speakers", :locals => { :speakers => next_event.speakers }
-    = partial "venue", :locals => { :venue => next_event.venue, :program => next_event.program }
+- if true#upcoming_events.any?
+  - next_event = data.events.october_2013
+  = partial "speakers", :locals => { :speakers => next_event.speakers }
+  = partial "venue", :locals => { :venue => next_event.venue, :program => next_event.program }
 
 %section#faq
   %h3
