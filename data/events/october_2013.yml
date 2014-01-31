@@ -63,3 +63,24 @@ speakers:
     remote: false
     slides_url:
     recording_url:
+
+program:
+  items:
+    - time: "17:30 – 18:00"
+      description: Welcome
+    - time: "18:00 – 19:30"
+      description: "Presentations and Q&A"
+    - time: "starting 19:30"
+      description: "Sauna and socializing, powered by Njetworking"
+
+venue:
+  google_maps_url: "https://maps.google.com/maps?q=Sep%C3%A4nkatu+20,+90100+Oulu,+Finland&amp;aq=0&oq=Sep%C3%A4nkatu+20,+90100+Oulu&sll=37.0625,-95.677068sspn=70.852019,134.912109&amp;ie=UTF&hnear=Sep%C3%A4nkatu+20,+Oulu,+Finland&t=m&z=14&iwloc=near&output=embed"
+  address: |
+    Technopolis
+    <br />
+    Sepänkatu 20, 90100 Oulu
+    <br />
+    The sauna is located at the top floor.
+  url: http://www.technopolis.fi/fi/technopolis/toimitilat/oulu/ydinkeskusta/Sivut/Kokoustila+saunaosasto-Reykjavik.aspx?returnurl=/fi/technopolis/toimitilat/oulu/ydinkeskusta/Sivut/default.aspx&returntype=c
+  url_title: at Technopolis’ website (in Finnish)
+

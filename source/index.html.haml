@@ -19,45 +19,10 @@ layout: front_page
       %a(href="https://www.facebook.com/SocializingFriday" title="The Socializing Friday Facebook page")
         = image_tag "header/njetworking_logo@2x.png", :alt => "Njetworking"
 
-  - if upcoming_events.any?
+  - if true#upcoming_events.any?
+    - next_event = data.events.october_2013
     = partial "speakers", :locals => { :speakers => next_event.speakers }
-
-  %section#venue
-    %h3
-      Venue and Program
-
-    %figure
-      %iframe(width="100%" height="250" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=Sep%C3%A4nkatu+20,+90100+Oulu,+Finland&amp;aq=0&oq=Sep%C3%A4nkatu+20,+90100+Oulu&sll=37.0625,-95.677068sspn=70.852019,134.912109&amp;ie=UTF&hnear=Sep%C3%A4nkatu+20,+Oulu,+Finland&t=m&z=14&iwloc=near&output=embed")
-
-    .program
-      %dl
-        %dt
-          17:30 – 18:00
-        %dd
-          Welcome
-        %dt
-          18:00 – 19:30
-        %dd
-          Presentations and Q&A
-        %dt
-          starting 19:30
-        %dd
-          Sauna and socializing, powered by Njetworking
-
-    .venue
-      %p.inline
-        You can find us at
-      %address
-        Technopolis
-        %br
-        Sepänkatu 20, 90100 Oulu
-        %br
-        The sauna is located at the top floor.
-      %p
-        More information can be found online
-        %a(href="http://www.technopolis.fi/fi/technopolis/toimitilat/oulu/ydinkeskusta/Sivut/Kokoustila+saunaosasto-Reykjavik.aspx?returnurl=/fi/technopolis/toimitilat/oulu/ydinkeskusta/Sivut/default.aspx&returntype=c")
-          at Technopolis’ website
-        (in Finnish).
+    = partial "venue", :locals => { :venue => next_event.venue, :program => next_event.program }
 
 %section#faq
   %h3
