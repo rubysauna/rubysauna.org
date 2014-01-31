@@ -24,4 +24,15 @@ module EventHelpers
     event.date > Date.today
   end
 
+  def next_event_fetch(field, default = nil, &block)
+    return unless upcoming_events.any?
+
+    field = field.to_sym
+    if (value = next_event.send(field))
+      block_given? ? capture_haml { yield(value) } : value
+    else
+      default
+    end
+  end
+
 end

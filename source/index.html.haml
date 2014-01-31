@@ -5,21 +5,11 @@ layout: front_page
 ---
 
 %section#intro
-  %p
-    Ruby Sauna invites the interested web developer and seasoned Rubyist in
-    northern Finland alike. People new to the language will hopefully whet their
-    appetite on a great ecosystem, while developers already working
-    with Ruby will have a chance to meet like–minded people and listen to talks on
-    interesting subjects.
+  = next_event_fetch(:intro, data.shared.default_intro)
+  = next_event_fetch(:powered_by) do |powered_by|
+    = partial "powered_by", :locals => { :powered_by => powered_by }
 
-  -#
-    %p.powered
-      Ruby Sauna is powered by
-      %br
-      %a(href="https://www.facebook.com/SocializingFriday" title="The Socializing Friday Facebook page")
-        = image_tag "header/njetworking_logo@2x.png", :alt => "Njetworking"
-
-- if true#upcoming_events.any?
+- if upcoming_events.any?
   - next_event = data.events.october_2013
   = partial "speakers", :locals => { :speakers => next_event.speakers }
   = partial "venue", :locals => { :venue => next_event.venue, :program => next_event.program }

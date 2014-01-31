@@ -1,5 +1,10 @@
 date: 2013-10-30
 
+powered_by:
+  url: "https://www.facebook.com/SocializingFriday"
+  url_title: The Socializing Friday Facebook page
+  logo_path: "header/njetworking_logo@2x.png"
+
 speakers:
   - handle: adam
     name: Adam Hawkins
