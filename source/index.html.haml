@@ -10,7 +10,6 @@ layout: front_page
     = partial "powered_by", :locals => { :powered_by => powered_by }
 
 - if upcoming_events.any?
-  - next_event = data.events.october_2013
   = partial "speakers", :locals => { :speakers => next_event.speakers }
   = partial "venue", :locals => { :venue => next_event.venue, :program => next_event.program }
 
@@ -70,38 +69,5 @@ layout: front_page
       = succeed "." do
         %a(href="http://twitter.com/polarblau") Florian
 
--#
-  %section#sponsors
-    %h5
-      Ruby Sauna has been made possible by
-    %ul
-      %li
-        %a(href="https://www.facebook.com/SocializingFriday" title="Socializing Friday at Facebook")
-          = image_tag "sponsors/njetworking@2x.png", :alt => "Njetworking logo", :height => 18
-      %li
-        %a(href="http://www.siili.fi" title="Siili.fi")
-          = image_tag "sponsors/siili@2x.png", :alt => "Siili logo", :height => 31
-      %li
-        %a(href="http://confluence.agilefinland.com/" title="Agilefinland.com")
-          = image_tag "sponsors/agile_finland@2x.png", :alt => "Agile Finland logo", :height => 45
-      %li
-        %a(href="http://www.haltian.com/" title="Haltian.com")
-          = image_tag "sponsors/haltian@2x.png", :alt => "Haltian logo", :height => 30
-      %li
-        %a(href="http://www.boogiesoftware.com/" title="Boogiesoftware.com")
-          = image_tag "sponsors/boogie@2x.png", :alt => "Boogie software logo", :height => 36
-      %li
-        %a(href="http://www.mepin.com/" title="Mepin.com")
-          = image_tag "sponsors/mepin@2x.png", :alt => "Mepin logo", :height => 30
-      %li
-        %a(href="http://www.symbio.com/" title="Symbio.com")
-          = image_tag "sponsors/symbio@2x.png", :alt => "Symbio logo", :height => 33
-      %li
-        %a(href="http://www.netplaza.fi/" title="Netplaza.fi")
-          = image_tag "sponsors/netplaza@2x.png", :alt => "Netplaza logo", :height => 20
-      %li
-        %a(href="http://www.pivolompakko.fi/" title="Pivolompakko.fi")
-          = image_tag "sponsors/pivo@2x.png", :alt => "Pivo logo", :height => 30
-      %li
-        %a(href="http://www.cie.fi/" title="Cie.fi")
-          = image_tag "sponsors/cie@2x.png", :alt => "CIE logo", :height => 50
+- if upcoming_events.any?
+  = partial "sponsors", :locals => { :sponsors => next_event.sponsors }

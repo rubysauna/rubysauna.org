@@ -89,3 +89,55 @@ venue:
   url: http://www.technopolis.fi/fi/technopolis/toimitilat/oulu/ydinkeskusta/Sivut/Kokoustila+saunaosasto-Reykjavik.aspx?returnurl=/fi/technopolis/toimitilat/oulu/ydinkeskusta/Sivut/default.aspx&returntype=c
   url_title: at Technopolis’ website (in Finnish)
 
+sponsors:
+  - name: Njetworking
+    url: https://www.facebook.com/SocializingFriday
+    url_title: Socializing Friday at Facebook
+    logo_path: "sponsors/njetworking@2x.png"
+    logo_height: 18
+  - name: Siili
+    url: "http://www.siili.fi"
+    url_title: Siili.fi
+    logo_path: "sponsors/siili@2x.png"
+    logo_height: 31
+  - name: Agile Finland
+    url: "http://confluence.agilefinland.com/"
+    url_title: Agilefinland.com
+    logo_path: "sponsors/agile_finland@2x.png"
+    logo_height: 45
+  - name: Haltian
+    url: "http://www.haltian.com/"
+    url_title: Haltian.com
+    logo_path: "sponsors/haltian@2x.png"
+    logo_height: 30
+  - name: Boogie software
+    url: http://www.boogiesoftware.com/
+    url_title: Boogiesoftware.com
+    logo_path: "sponsors/boogie@2x.png"
+    logo_height: 36
+  - name: Mepin
+    url: "http://www.mepin.com/"
+    url_title: Mepin.com
+    logo_path: sponsors/mepin@2x.png
+    logo_height: 30
+  - name: Symbio
+    url: "http://www.symbio.com/"
+    url_title: Symbio.com
+    logo_path: "sponsors/symbio@2x.png"
+    logo_height: 33
+  - name: Netplaza
+    url: "http://www.netplaza.fi/"
+    url_title: Netplaza.fi
+    logo_path: "sponsors/netplaza@2x.png"
+    logo_height: 20
+  - name: 
+    url: "http://www.pivolompakko.fi/"
+    url_title: Pivolompakko.fi
+    logo_path: "sponsors/pivo@2x.png"
+    logo_height: 30
+  - name: CIE
+    url: "http://www.cie.fi/"
+    url_title: Cie.fi
+    logo_path: "sponsors/cie@2x.png"
+    logo_height: 50
+  
