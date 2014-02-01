@@ -1,7 +1,7 @@
 module EventHelpers
 
   def sorted_events
-    data.events.values.sort_by(&:date)
+    data.events.values.sort_by(&:time)
   end
 
   def archived_events
@@ -17,11 +17,11 @@ module EventHelpers
   end
 
   def event_path(event)
-    "/archive/#{event.date.year}/#{event.date.month}/#{event.date.day}/index.html"
+    "/archive/#{event.time.year}/#{event.time.month}/#{event.time.day}/index.html"
   end
 
   def upcoming_event?(event)
-    event.date > Date.today
+    event.time > (Date.today + 1.day).to_time
   end
 
   def next_event_fetch(field, default = nil, &block)

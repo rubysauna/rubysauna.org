@@ -7,26 +7,18 @@
     %br
     in the cold north
 
-  %section#newsletter
-    %p
-      Sign–up to our newsletter and we’ll keep you up–to–date on future events and other
-      relevant topics!
-
-    %form(action="http://rubysauna.us3.list-manage1.com/subscribe/post?u=ae07e3efbdc9f6f7bba7ff3c1&amp;id=f2708fda5f" method="post" target="_blank")
-      %label(for="email")
-        Your email address *
-      %input.text(type="email" value="" name="EMAIL" id="email" placeholder="Your email address")>
-      %input.hidden(type="text" name="b_ae07e3efbdc9f6f7bba7ff3c1_f2708fda5f" value="")
-      %input.button(type="submit" value="Subscribe" name="subscribe")
-
-
-  -#
+  - if upcoming_events.any?
     %p.meta
-      30. October 2013, 17:30  &mdash;  Oulu, Finland
+      = next_event.time.strftime "%e. %B %Y, %H:%M"
+      &mdash;
+      = next_event.location
 
     %p.action
-      %a(href="https://tito.io/ruby-sauna/ruby-sauna-october-2013" title="Get your ticket now")
+      %a(href="#{next_event.tickets_url}" title="Get your ticket now")
         Get your free ticket
+
+  - else
+    = partial "newsletter"
 
   .background
     = image_tag "header/background.jpg", :alt => ""

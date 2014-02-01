@@ -14,6 +14,7 @@ layout: front_page
   = partial "venue", :locals => { :venue => next_event.venue, :program => next_event.program }
 
 = partial "faq"
+= partial "newsletter"
 
 - if upcoming_events.any?
   = partial "sponsors", :locals => { :sponsors => next_event.sponsors }
