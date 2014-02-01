@@ -1,6 +1,6 @@
 time: 2014-02-27 17:30:00 +0200
 location: Oulu, Finland
-tickets_url:
+tickets_url: https://ti.to/ruby-sauna/rubysauna-february-2014/
 
 speakers:
   - handle: florian
@@ -14,7 +14,7 @@ speakers:
 
       He is involved in the Ruby community though the charity Ruby Berlin e.V.,
       co-organizing eurucamp, JRubyConf.EU and several other meetups.
-      His relationship to Finland is a painful one.
+      His relationship with Finland is a painful one.
     url: http://asquera.de
     url_title: Asquera.de
     remote: false
