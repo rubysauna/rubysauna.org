@@ -1,6 +1,7 @@
 time: 2013-10-30 17:30:00 +0200
 location: Oulu, Finland
 tickets_url: "https://tito.io/ruby-sauna/ruby-sauna-october-2013"
+lanyrd_url: "http://lanyrd.com/2013/rubysauna/"
 
 powered_by:
   url: "https://www.facebook.com/SocializingFriday"
@@ -132,7 +133,7 @@ sponsors:
     url_title: Netplaza.fi
     logo_path: "sponsors/netplaza@2x.png"
     logo_height: 20
-  - name: 
+  - name:
     url: "http://www.pivolompakko.fi/"
     url_title: Pivolompakko.fi
     logo_path: "sponsors/pivo@2x.png"
@@ -142,4 +143,4 @@ sponsors:
     url_title: Cie.fi
     logo_path: "sponsors/cie@2x.png"
     logo_height: 50
-  
+

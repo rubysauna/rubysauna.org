@@ -7,9 +7,10 @@
       %li
         %a(href="http://#{page}.com/rubysauna" title="Join us!")
           = image_tag "#{page}@2x.png"
-    %li
-      %a(href="http://lanyrd.com/2013/rubysauna/" title="Join us at Lanyrd!")
-        = image_tag "lanyrd@2x.png"
+    - if upcoming_events.any? and next_event.lanyrd_url
+      %li
+        %a(href="#{next_event.lanyrd_url}" title="Join us at Lanyrd!")
+          = image_tag "lanyrd@2x.png"
 
   %p
     Contact us via
