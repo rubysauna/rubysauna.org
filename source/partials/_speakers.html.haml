@@ -3,8 +3,8 @@
     Meet our speakers
 
   %ul
-    - speakers.each_with_index do |speaker, index|
-      %li(class="#{ "trailing" if (speakers.length % 3).nonzero? && index == speakers.length - 1 }")
+    - speakers.each do |speaker|
+      %li
         .head
           = image_tag "speakers/#{speaker.handle}@2x.jpg", :alt => speaker.name, :class => "portrait"
           %h4

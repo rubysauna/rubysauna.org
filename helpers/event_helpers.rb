@@ -21,7 +21,7 @@ module EventHelpers
   end
 
   def upcoming_event?(event)
-    event.time > (Date.today + 1.day).to_time
+    event.time > (Date.today + 1).to_time
   end
 
   def next_event_fetch(field, default = nil, &block)

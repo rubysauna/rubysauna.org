@@ -1,0 +1,113 @@
+time: 2014-02-27 17:30:00 +0200
+location: Oulu, Finland
+tickets_url: "https://tito.io/ruby-sauna/ruby-sauna-october-2013"
+
+speakers:
+  - handle: florian
+    name: Florian Gilcher
+    title: eurucamp conference chair
+    topic: "Full Metal Rüby <br />Behind the scenes of tech communities"
+    bio: |
+      Florian Gilcher fell in love with Ruby before Rails was even a thing.
+      Today, he runs a consultancy focussing on special backend systems —
+      in Ruby and other languages.
+
+      He is involved in the Ruby community though the charity Ruby Berlin e.V.,
+      co-organizing eurucamp, JRubyConf.EU and several other meetups.
+      His relationship to Finland is a painful one.
+    url: http://asquera.de
+    url_title: Asquera.de
+    remote: false
+    slides_url:
+    recording_url:
+
+  - handle: vesa
+    name: Vesa Vänskä
+    title: Senior Software Developer at Kisko
+    topic: "Hypermedia APIs <br />Why, what, how?"
+    bio: |
+      Vesa has been involved with the Ruby fad for seven years. He has had
+      time to get mixed up with a lot of things. He is partner at Kisko Labs,
+      web product consultancy based in Helsinki. At Kisko he also builds
+      the best workout journal app WODconnect, organizes Helsinki Ruby
+      Brigade meet-ups and Frozen Rails conference. As a member of Rails Girls
+      team he helps people take their first steps in the world of programming.
+      When he is not doing all that stuff he is probably drinking coffee,
+      playing games and listening to music with bass.
+    url: http://vesavanska.com/
+    url_title: Vesavanska.com
+    remote: false
+    slides_url:
+    recording_url:
+
+  - handle: piotr
+    name: Piotr Solnica
+    title: Tech Lead at Powow
+    topic: "ROM and friends <br />Video Q&A"
+    bio: |
+      Piotr Solnica is a software developer from Kraków, Poland. He’s an active
+      member of the OSS Ruby community mostly busy with working on Ruby Object
+      Mapper project. He likes to blog about his discoveries too. When he’s not
+      doing all of that he’s spending time with his wife and 2 sons. Besides:
+      mountains, coffee, beer, music and other nerdy things.
+    url: http://solnic.eu/
+    url_title: Solnic.eu
+    remote: true
+    slides_url:
+    recording_url:
+
+  - handle: inka
+    name: Inka Piippo
+    title: Software developer at Pivo
+    topic: "Adopting Ruby on Rails <br /> The learning perspective"
+    bio: |
+      Inka met Ruby and the wonderfully diverse ecosystem a few years ago and never looked back.
+      She is a powerful combination of a full-stack developer and a QA-person, which has a natural side
+      effect making her code perfect. She has also coached at RailsGirls in Oulu.
+    url: http://twitter.com/inkapiip
+    url_title: Twitter.com/inkapiip
+    remote: false
+    slides_url:
+    recording_url:
+
+program:
+  items:
+    - time: "17:30 – 18:00"
+      description: Welcome
+    - time: "18:00 – 19:30"
+      description: "Presentations and Q&A"
+    - time: "starting 19:30"
+      description: "Sauna and socializing"
+
+venue:
+  google_maps_url: "https://maps.google.com/maps?q=Sep%C3%A4nkatu+20,+90100+Oulu,+Finland&amp;aq=0&oq=Sep%C3%A4nkatu+20,+90100+Oulu&sll=37.0625,-95.677068sspn=70.852019,134.912109&amp;ie=UTF&hnear=Sep%C3%A4nkatu+20,+Oulu,+Finland&t=m&z=14&iwloc=near&output=embed"
+  address: |
+    Technopolis
+    <br />
+    Sepänkatu 20, 90100 Oulu
+    <br />
+    The sauna is located at the top floor.
+  url: http://www.technopolis.fi/fi/technopolis/toimitilat/oulu/ydinkeskusta/Sivut/Kokoustila+saunaosasto-Reykjavik.aspx?returnurl=/fi/technopolis/toimitilat/oulu/ydinkeskusta/Sivut/default.aspx&returntype=c
+  url_title: at Technopolis’ website (in Finnish)
+
+sponsors:
+  - name: Siili
+    url: "http://www.siili.fi"
+    url_title: Siili.fi
+    logo_path: "sponsors/siili@2x.png"
+    logo_height: 31
+  - name: Agile Finland
+    url: "http://confluence.agilefinland.com/"
+    url_title: Agilefinland.com
+    logo_path: "sponsors/agile_finland@2x.png"
+    logo_height: 45
+  - name: Boogie software
+    url: http://www.boogiesoftware.com/
+    url_title: Boogiesoftware.com
+    logo_path: "sponsors/boogie@2x.png"
+    logo_height: 36
+  - name:
+    url: "http://www.pivolompakko.fi/"
+    url_title: Pivolompakko.fi
+    logo_path: "sponsors/pivo@2x.png"
+    logo_height: 30
