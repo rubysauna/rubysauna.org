@@ -1,6 +1,6 @@
 time: 2014-02-27 17:30:00 +0200
 location: Oulu, Finland
-tickets_url: "https://tito.io/ruby-sauna/ruby-sauna-october-2013"
+tickets_url:
 
 speakers:
   - handle: florian
