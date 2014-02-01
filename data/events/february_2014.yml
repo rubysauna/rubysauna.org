@@ -74,9 +74,9 @@ program:
   items:
     - time: "17:30 – 18:00"
       description: Welcome
-    - time: "18:00 – 19:30"
+    - time: "18:00 – 20:00"
       description: "Presentations and Q&A"
-    - time: "starting 19:30"
+    - time: "starting 20:00"
       description: "Sauna and socializing"
 
 venue:
