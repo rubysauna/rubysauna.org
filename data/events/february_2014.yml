@@ -62,8 +62,8 @@ speakers:
     topic: "Adopting Ruby on Rails <br /> The learning perspective"
     bio: |
       Inka met Ruby and the wonderfully diverse ecosystem a few years ago and never looked back.
-      She is a powerful combination of a full-stack developer and a QA-person, which has a natural side
-      effect making her code perfect. She has also coached at RailsGirls in Oulu.
+      She’s a perfectionist full–stack web developer with extensive QA experience and moonlights as
+      coach for the local RailsGirls chapter.
     url: http://twitter.com/inkapiip
     url_title: Twitter.com/inkapiip
     remote: false
@@ -96,11 +96,6 @@ sponsors:
     url_title: Siili.fi
     logo_path: "sponsors/siili@2x.png"
     logo_height: 31
-  - name: Agile Finland
-    url: "http://confluence.agilefinland.com/"
-    url_title: Agilefinland.com
-    logo_path: "sponsors/agile_finland@2x.png"
-    logo_height: 45
   - name: Boogie software
     url: http://www.boogiesoftware.com/
     url_title: Boogiesoftware.com
