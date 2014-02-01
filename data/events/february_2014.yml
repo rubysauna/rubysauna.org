@@ -2,6 +2,9 @@ time: 2014-02-27 17:30:00 +0200
 location: Oulu, Finland
 tickets_url: "https://ti.to/ruby-sauna/rubysauna-february-2014/"
 lanyrd_url: "http://lanyrd.com/2014/rubysauna/"
+photos_url:
+recordings_url:
+summary:
 
 speakers:
   - handle: florian

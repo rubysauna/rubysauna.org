@@ -1,6 +1,63 @@
-ARCHIVE
+---
+title: Event Archive | Ruby Sauna 2013
+body_class: archive page
+---
 
-%ul
-  - archived_events.each do |event|
-    %li
-      = link_to "EVENT", event_path(event)
+%article
+  %h3
+    Event archive
+
+  %ul
+    - archived_events.each_with_index do |event, index|
+      %li
+
+        .header
+          %h4
+            %strong
+              = "v1.#{index}"
+            %span
+              = event.time.strftime "%e. %B %Y"
+            %span
+              = event.location
+          .summary
+            :markdown
+              #{event.summary}
+
+        .speakers
+          %h5
+            The Speakers
+          %ul
+            - event.speakers.each do |speaker|
+              %li
+                = image_tag "speakers/#{speaker.handle}@2x.jpg", :alt => speaker.name, :class => "portrait"
+                %strong
+                  = speaker.name
+                %em
+                  = speaker.topic
+                .resources
+                  - if speaker.slides_url
+                    = link_to "Slides", speaker.slides_url, :class => "slides"
+                  - if speaker.recording_url
+                    = link_to "Recording", speaker.recording_url, :class => "recording"
+        .sponsors
+          %h5
+            The Sponsors
+          %ul
+            - event.sponsors.each do |sponsor|
+              %li
+                %a(href="#{sponsor.url}" title="#{sponsor.url_title}")
+                  = image_tag sponsor.logo_path, :alt => "#{sponsor.name} logo", :height => sponsor.logo_height / 2
+
+        .resources
+          %h5
+            The Resources
+          %ul
+            - if event.photos_url
+              %li
+                = link_to "Photos", event.photos_url, :class => "photos"
+            - if event.recording_url
+              %li
+                = link_to "Recordings", event.recording_url, :class => "recordings"
+            - if event.lanyrd_url
+              %li
+                = link_to "Lanyrd", event.lanyrd_url, :class => "lanyrd"

@@ -2,6 +2,12 @@ time: 2013-10-30 17:30:00 +0200
 location: Oulu, Finland
 tickets_url: "https://tito.io/ruby-sauna/ruby-sauna-october-2013"
 lanyrd_url: "http://lanyrd.com/2013/rubysauna/"
+photos_url:
+recordings_url:
+summary: |
+  The first RubySauna was an overwhelming success. Almost 80 people
+  came for the talks and many stayed for the Sauna. The evening even ended
+  northern lights!
 
 powered_by:
   url: "https://www.facebook.com/SocializingFriday"

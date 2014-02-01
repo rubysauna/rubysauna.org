@@ -16,10 +16,6 @@ module EventHelpers
     upcoming_events.first
   end
 
-  def event_path(event)
-    "/archive/#{event.time.year}/#{event.time.month}/#{event.time.day}/index.html"
-  end
-
   def upcoming_event?(event)
     event.time > (Date.today + 1).to_time
   end
