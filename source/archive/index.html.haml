@@ -8,13 +8,13 @@ body_class: archive page
     Event archive
 
   %ul
-    - archived_events.each_with_index do |event, index|
+    - archived_events.reverse.each_with_index do |event, index|
       %li
 
         .header
           %h4
             %strong
-              = "v1.#{index}"
+              = "v1.#{archived_events.length - index - 1}"
             %span
               = event.time.strftime "%e. %B %Y"
             %span
