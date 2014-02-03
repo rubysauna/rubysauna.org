@@ -8,7 +8,7 @@
         .head
           = image_tag "speakers/#{speaker.handle}@2x.jpg", :alt => speaker.name, :class => "portrait"
           %h4
-            %a(href="https://twitter.com/#{speaker.handle}" title="#{speaker.name} on Twitter")
+            %a(href="#{speaker.url}" title="#{speaker.name} on Twitter")
               = speaker.name
             - if speaker.remote
               = image_tag "shared/video_icon.png", :alt => "Video only"
