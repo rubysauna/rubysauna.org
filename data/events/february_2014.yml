@@ -112,3 +112,13 @@ sponsors:
     url_title: Pivolompakko.fi
     logo_path: "sponsors/pivo@2x.png"
     logo_height: 30
+  - name:
+    url: "http://kiskolabs.com/"
+    url_title: Kiskolabs.com
+    logo_path: "sponsors/kisko@2x.png"
+    logo_height: 50
+  - name:
+    url: "http://www.technopolis.fi/"
+    url_title: Technopolis.fi
+    logo_path: "sponsors/technopolis@2x.png"
+    logo_height: 15
