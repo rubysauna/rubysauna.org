@@ -1,0 +1,11 @@
+!!! 5
+- ie_html :lang => 'en', :class => 'no-js' do
+  %head
+    = partial "../partials/countdown_head"
+
+  %body{:class => current_page.data.body_class || 'page'}
+    #main(role="main")
+      = partial '../partials/header'
+      = yield
+
+      = partial "../partials/countdown_scripts"
