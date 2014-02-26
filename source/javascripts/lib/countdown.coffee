@@ -36,8 +36,8 @@ class Countdown
 	constructor: (selector) ->
 		@selector = $(selector)
 		@deadline = new Date()
-		@deadline.setHours(23)
-		@deadline.setMinutes(10)
+		@deadline.setHours(18)
+		@deadline.setMinutes(0)
 		@deadline.setSeconds(0)
 		@deadline.setMilliseconds(0)
 	start: ->
@@ -65,6 +65,6 @@ $ ->
 	scroller = new Scroller('.scroll-element')
 	setInterval -> 
 		scroller.animate()
-	, 6000
+	, 12000
 
 	scroller.animate()

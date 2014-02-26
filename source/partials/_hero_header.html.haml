@@ -7,8 +7,18 @@
     %br
     in the cold north
 
-  %p.meta
-    30. October 2013, 17:30  &mdash;  Oulu, Finland
+  - if upcoming_events.any?
+    %p.meta
+      = next_event.time.strftime "%e. %B %Y, %H:%M"
+      &mdash;
+      = next_event.location
+
+    %p.action
+      %a(href="#{next_event.tickets_url}" title="Get your ticket now")
+        Get your free ticket
+
+  - else
+    = partial "newsletter"
 
   .background
     = image_tag "header/background.jpg", :alt => ""

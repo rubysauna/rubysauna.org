@@ -36,14 +36,29 @@ body.page
       +with-font-size
         margin: relative(22px 0)
 
+  table
+    td, th
+      text-align: center
+      border-bottom: 1px solid $very-dark-red
+      +with-font-size
+        padding: relative(16px 10px)
+
+      &:first-child
+        text-align: left
+
+    th
+      +with-font-size
+        padding: relative(0 10px 8px)
 
   // ---
 
   +media($mini-tablet)
-    +span-columns(3)
-    +shift(0.5)
+    article
+      +span-columns(3)
+      +shift(0.5)
+
 
   +media($tablet)
-    +span-columns(3)
-    +shift(1.5)
-
+    article
+      +span-columns(3)
+      +shift(1.5)

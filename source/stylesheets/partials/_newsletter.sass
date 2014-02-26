@@ -1,0 +1,54 @@
+#newsletter
+  text-align: center
+  clear: both
+  background: transparentize($black, 0.25)
+  +with-font-size
+    padding: relative(24px 40px 32px)
+
+  label
+    // html.placeholder &
+    display: none
+
+  input
+    &.text
+      background: $white
+      border: none
+      outline: none
+      border-radius: 2px
+      +with-font-size
+        padding: relative(6px 10px 7px)
+        margin: relative(0 0 8px)
+
+    &.button
+      @extend %button
+      +with-font-size(16px)
+        padding: relative(8px 20px)
+        line-height: relative(16px)
+
+    &.hidden
+      position: absolute
+      left: -999em
+
+  // ---
+
+  +media($mobile)
+    +with-font-size
+      margin: relative(32px 0 0)
+
+    input
+      &.text
+        width: 50%
+
+  +media($mini-tablet)
+    +with-font-size
+      margin: relative(48px 0 0)
+
+    p
+      width: percentage(2/3)
+      margin-left: auto
+      margin-right: auto
+
+  +media($tablet)
+    +span-columns(4)
+    +shift(1)
+

@@ -1,3 +1,7 @@
+# explicitely load helpers so we can use them below
+require "helpers/event_helpers"
+helpers EventHelpers
+
 # Assets
 set :css_dir,     'stylesheets'
 set :js_dir,      'javascripts'

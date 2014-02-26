@@ -1,0 +1,47 @@
+body.sponsorship
+  article
+    h4
+      text-transform: uppercase
+      text-align: center
+      color: $red
+      +with-font-size
+        margin: relative(48px 0 24px)
+
+    table
+      th
+        color: $red
+        +sans(light)
+        +with-font-size(24px)
+
+        strong
+          display: block
+          +with-font-size(16px, 24px)
+          color: $white
+
+      td, th
+        border-right: 1px solid $very-dark-red
+        position: relative
+
+        &:last-child
+          border-right: none
+
+        &.sold
+          background: transparentize($red, 0.2)
+          text-align: center
+          vertical-align: middle
+          color: $white
+          +sans(bold)
+          text-transform: uppercase
+
+          span
+            display: block
+            +transform(rotate(-20deg))
+            margin-top: 0.5em
+
+      td
+        &.yes
+          color: $red
+          +sans(bold)
+
+        &.no
+          color: $gray

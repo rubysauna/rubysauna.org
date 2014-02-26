@@ -5,7 +5,12 @@
 
   %body{:class => current_page.data.body_class || 'page'}
     #main(role="main")
-      = partial '../partials/header'
+      %header#header
+        %h1
+          = link_to "/" do
+            = image_tag "header/logo@2x.png", :alt => "Ruby Sauna"
+
+
       = yield
 
       = partial "../partials/countdown_scripts"

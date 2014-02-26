@@ -3,9 +3,9 @@
   +with-font-size
     padding: relative(64px 0 0)
 
-  dl
+  dl:first-of-type
     +with-font-size
-      margin: relative(56px 0 24px)
+      margin-top: relative(56px)
 
   dt
     +sans(bold)
@@ -25,6 +25,9 @@
   +media($mini-tablet)
     dl
       +span-columns(2 of 4)
+      +with-font-size
+        margin-top: relative(56px)
+        margin-bottom: relative(24px)
 
 
   +media($tablet)

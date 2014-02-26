@@ -1,0 +1,8 @@
+%section#sponsors
+  %h5
+    Ruby Sauna has been made possible by
+  %ul
+    - sponsors.each do |sponsor|
+      %li
+        %a(href="#{sponsor.url}" title="#{sponsor.url_title}")
+          = image_tag sponsor.logo_path, :alt => "#{sponsor.name} logo", :height => sponsor.logo_height

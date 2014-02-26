@@ -1,0 +1,152 @@
+time: 2013-10-30 17:30:00 +0200
+location: Oulu, Finland
+tickets_url: "https://tito.io/ruby-sauna/ruby-sauna-october-2013"
+lanyrd_url: "http://lanyrd.com/2013/rubysauna/"
+photos_url:
+recordings_url:
+summary: |
+  The first RubySauna was an overwhelming success. Almost 80 people
+  came for the talks and many stayed for the Sauna. The evening even ended
+  with northern lights!
+
+powered_by:
+  url: "https://www.facebook.com/SocializingFriday"
+  url_title: The Socializing Friday Facebook page
+  logo_path: "header/njetworking_logo@2x.png"
+
+speakers:
+  - handle: adam
+    name: Adam Hawkins
+    title: Platform Engineer
+    topic: "Ruby — <br />A wonderfully diverse ecosystem"
+    bio: |
+      Adam is a rubyist, rails guy, and general open source nerd.
+      He loves to contribute to open source projects he uses as well as
+      write his own. He scratches his own itches through hisopen source work.
+      When he’s not coding he travels and enjoys trance in very heavy doses.
+    url: http://hawkins.io
+    url_title: Hawkins.io
+    remote: false
+    slides_url:
+    recording_url:
+
+  - handle: ville
+    name: Ville Kolehmainen
+    title: Creative Director, Siili Solutions
+    topic: "Prototyping for scale <br />The process behind the new nokia.com"
+    bio: |
+      Ville is a hands-on creative director at Siili, a software powerhouse
+      in Helsinki. As a designer Ville's ambition is in efficient problem
+      solving and creating beautiful user experiences. In addition to design
+      and development work, Ville has written and co-authored large-scale
+      design and product development guidelines for companies like Outotec and Nokia.
+    url: https://twitter.com/villek
+    url_title: Twitter.com/villek
+    remote: false
+    slides_url:
+    recording_url:
+
+  - handle: avdi
+    name: Avdi Grimm
+    title: Chief Aeronaut at ShipRise
+    topic: "Ruby and the Ruby community <br />Live Video Q&A"
+    bio: |
+      Avdi Grimm has been hacking Ruby code for over 10 years, and is still
+      loving it. He is chief aeronaut at ShipRise, a consultancy specializing
+      in sustainable software development and in helping geographically dispersed
+      teams work more effectively. He lives in Southern Pennsylvania with his wife
+      and five children, and in his copious spare time blogs and podcasts at Virtuous
+      Code and Wide Teams.
+    url: https://avdi.org
+    url_title: Avdi.org
+    remote: true
+    slides_url:
+    recording_url:
+
+  - handle: railsgirls
+    name: Rails Girls
+    title: Represented by Annika Juvani
+    topic: "Introducing Rails Girls Oulu <br />Brought to you by OuluSES"
+    bio: |
+      Rails Girls organizes workshops globally for women with the aim to inspire
+      them to create things on the web. During the event they’ll learn the
+      basics of programming, software development and prototyping. Events are
+      non-profit and organized by volunteers.
+    url: http://railsgirls.com/oulu
+    url_title: Railsgirls.com/oulu
+    remote: false
+    slides_url:
+    recording_url:
+
+program:
+  items:
+    - time: "17:30 – 18:00"
+      description: Welcome
+    - time: "18:00 – 19:30"
+      description: "Presentations and Q&A"
+    - time: "starting 19:30"
+      description: "Sauna and socializing, powered by Njetworking"
+
+venue:
+  google_maps_url: "https://maps.google.com/maps?q=Sep%C3%A4nkatu+20,+90100+Oulu,+Finland&amp;aq=0&oq=Sep%C3%A4nkatu+20,+90100+Oulu&sll=37.0625,-95.677068sspn=70.852019,134.912109&amp;ie=UTF&hnear=Sep%C3%A4nkatu+20,+Oulu,+Finland&t=m&z=14&iwloc=near&output=embed"
+  address: |
+    Technopolis
+    <br />
+    Sepänkatu 20, 90100 Oulu
+    <br />
+    The sauna is located at the top floor.
+  url: http://www.technopolis.fi/fi/technopolis/toimitilat/oulu/ydinkeskusta/Sivut/Kokoustila+saunaosasto-Reykjavik.aspx?returnurl=/fi/technopolis/toimitilat/oulu/ydinkeskusta/Sivut/default.aspx&returntype=c
+  url_title: at Technopolis’ website (in Finnish)
+
+sponsors:
+  - name: Njetworking
+    url: https://www.facebook.com/SocializingFriday
+    url_title: Socializing Friday at Facebook
+    logo_path: "sponsors/njetworking@2x.png"
+    logo_height: 18
+  - name: Siili
+    url: "http://www.siili.fi"
+    url_title: Siili.fi
+    logo_path: "sponsors/siili@2x.png"
+    logo_height: 31
+  - name: Agile Finland
+    url: "http://confluence.agilefinland.com/"
+    url_title: Agilefinland.com
+    logo_path: "sponsors/agile_finland@2x.png"
+    logo_height: 45
+  - name: Haltian
+    url: "http://www.haltian.com/"
+    url_title: Haltian.com
+    logo_path: "sponsors/haltian@2x.png"
+    logo_height: 30
+  - name: Boogie software
+    url: http://www.boogiesoftware.com/
+    url_title: Boogiesoftware.com
+    logo_path: "sponsors/boogie@2x.png"
+    logo_height: 36
+  - name: Mepin
+    url: "http://www.mepin.com/"
+    url_title: Mepin.com
+    logo_path: sponsors/mepin@2x.png
+    logo_height: 30
+  - name: Symbio
+    url: "http://www.symbio.com/"
+    url_title: Symbio.com
+    logo_path: "sponsors/symbio@2x.png"
+    logo_height: 33
+  - name: Netplaza
+    url: "http://www.netplaza.fi/"
+    url_title: Netplaza.fi
+    logo_path: "sponsors/netplaza@2x.png"
+    logo_height: 20
+  - name:
+    url: "http://www.pivolompakko.fi/"
+    url_title: Pivolompakko.fi
+    logo_path: "sponsors/pivo@2x.png"
+    logo_height: 30
+  - name: CIE
+    url: "http://www.cie.fi/"
+    url_title: Cie.fi
+    logo_path: "sponsors/cie@2x.png"
+    logo_height: 50
+

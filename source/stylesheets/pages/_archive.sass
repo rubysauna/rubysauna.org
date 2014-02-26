@@ -1,0 +1,92 @@
+body.archive
+  article
+
+    ul
+      @extend %unlisted
+
+    h5
+      text-transform: uppercase
+      +with-font-size
+        margin: relative(40px 0 16px)
+
+    > ul > li
+      border-bottom: 1px solid $gray
+      +with-font-size
+        padding: relative(32px 0 32px)
+        margin: relative(0 0 32px)
+
+    .header
+      +with-font-size
+        margin: relative(0 0 32px)
+
+      h4
+        border-bottom: 1px solid $very-dark-red
+        +with-font-size
+          padding: relative(0 0 16px)
+
+      strong
+        display: block
+        color: $red
+        float: left
+        +with-font-size(56px)
+          line-height: relative(38px)
+          margin: relative(0 $padding 0 0)
+
+      span
+        display: block
+        +sans(light)
+
+      .summary
+        +with-font-size
+          margin: relative(16px 0 0)
+
+    // Speakers
+    .speakers
+      ul
+        +with-font-size
+          padding: relative(0 0 0 $padding)
+
+      li
+        @extend %clearfix
+        +with-font-size
+          padding: relative(8px 0)
+
+      img.portrait
+        width: 50px
+        float: left
+        border-radius: 50%
+        margin-right: $padding
+
+      strong
+        display: block
+        +with-font-size
+          line-height: relative(24px)
+
+      em
+        +serif
+        br
+          display: none
+
+    // Sponsors
+    .sponsors
+      a
+        border: none
+
+      ul
+        padding: relative(0 0 0 $padding)
+
+      li
+        +inline-block
+        +with-font-size
+          height: relative(32px)
+          line-height: relative(32px)
+          padding: relative(0 $padding / 2 0 0)
+
+        img
+          vertical-align: middle
+
+
+    .resources
+      ul
+        padding: relative(0 0 0 $padding)
+

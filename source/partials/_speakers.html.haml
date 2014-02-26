@@ -1,0 +1,24 @@
+%section#speakers
+  %h3
+    Meet our speakers
+
+  %ul
+    - speakers.each do |speaker|
+      %li
+        .head
+          = image_tag "speakers/#{speaker.handle}@2x.jpg", :alt => speaker.name, :class => "portrait"
+          %h4
+            %a(href="#{speaker.url}" title="#{speaker.name} on Twitter")
+              = speaker.name
+            - if speaker.remote
+              = image_tag "shared/video_icon.png", :alt => "Video only"
+          %p.meta
+            = speaker.title
+          %p.topic
+            = speaker.topic
+          .bio
+            :markdown
+              #{speaker.bio}
+          %p.bio-footer
+            %a(href="#{speaker.url}" title="Visit #{speaker.url_title}")
+              = speaker.url_title
