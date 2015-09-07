@@ -1,0 +1,39 @@
+time: 2015-09-08 18:00:00 +0200
+location: Helsinki, Finland
+tickets_url: "https://ti.to/ruby-sauna/helsinki-2015/"
+lanyrd_url:
+photos_url:
+recordings_url:
+summary:
+
+speakers: []
+
+program:
+  items:
+    - time: "18:00 – 18:30"
+      description: Welcome
+    - time: "18:30 – 21:30"
+      description: "Presentations"
+    - time: "starting 21:30"
+      description: "Sauna and socializing"
+
+venue:
+  google_maps_url: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.6886287010852!2d24.921873299999998!3d60.1693334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920a3684d24cf7%3A0x20eb40ae3dbcf36a!2sLepp%C3%A4suonkatu+11%2C+00101+Helsinki%2C+Finland!5e0!3m2!1sen!2sde!4v1441641387865"
+  address: |
+    Sauna2 Kamppi
+    <br />
+    Leppäsuonkatu 11, 00100 Helsinki
+  url: "http://sauna2.fi/0/sauna2-kamppi-5/"
+  url_title: at sauna<sup>2</sup>’s website (in Finnish)
+
+sponsors:
+  - name: Siili
+    url: "http://www.siili.fi"
+    url_title: Siili.fi
+    logo_path: "sponsors/siili@2x.png"
+    logo_height: 31
+  - name:
+    url: "http://www.pivolompakko.fi/"
+    url_title: Pivolompakko.fi
+    logo_path: "sponsors/pivo@2x.png"
+    logo_height: 30
