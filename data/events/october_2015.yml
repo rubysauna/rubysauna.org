@@ -6,7 +6,20 @@ photos_url:
 recordings_url:
 summary:
 
-speakers: []
+speakers:
+  - handle: lucas
+    name: Lucas Dohmen
+    title: Consultant at innoQ
+    topic: "Codegolfing"
+    bio: |
+      Codegolfing is an interesting sport: You try to write a program in the fewest characters necessary. Do you want to ship this code to production somewhere? Probably not, but just by trying this exercise you will learn a lot about your favorite programming language. You will also be surprised by how much you can do in just a few lines of code while the constraints will stimulate your productivity. Ruby is surprisingly good for golfing due to its Perl heritage.
+
+      In this talk I will tell you a bit more about code golfing and then dive into some code I have golfed. I will show you some tricks I learned and how the desire to shave off a few more characters every time leads to new features in your tiny program that you thought would not fit in such a tiny program.
+    url: https://lucas.dohmen.io/
+    url_title: Lucas.dohmen.io
+    remote: false
+    slides_url:
+    recording_url:
 
 program:
   items:
