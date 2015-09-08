@@ -62,3 +62,8 @@ sponsors:
     url_title: Kiskolabs.com
     logo_path: "sponsors/kisko@2x.png"
     logo_height: 50
+  - name:
+    url: "http://flowdock.com/"
+    url_title: Flowdock.com
+    logo_path: "sponsors/flowdock@2x.png"
+    logo_height: 50
