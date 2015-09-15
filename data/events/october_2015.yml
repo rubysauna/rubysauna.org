@@ -27,6 +27,19 @@ speakers:
     remote: false
     slides_url:
     recording_url:
+  - handle: ben
+    name: Ben Lovell
+    title: Freelance Rubyist
+    topic: "Ruby is <strike>dead</strike> alive!"
+    bio: |
+      “Blah, blah Ruby is dead.” I'm getting tired of hearing this blatant falsehood and so should you. Ruby has never been more alive! I'm here to posit the argument that the Ruby language, runtime and community is in its renaissance. There was never a greater time to be a Rubyist BUT it falls upon us all to protect our ideals and help secure Ruby's future for another ten years. So what can we do to help? Let's get to the bottom of this and have some fun along the way…
+
+      Shout it out - “Ruby is alive!” <3
+    url: "https://twitter.com/benlovell"
+    url_title: "@benlovell on Twitter"
+    remote: false
+    slides_url:
+    recording_url:
 
 program:
   items:
