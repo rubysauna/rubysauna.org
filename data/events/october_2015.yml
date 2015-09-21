@@ -27,6 +27,19 @@ speakers:
     remote: false
     slides_url:
     recording_url:
+  - handle: julie
+    name: Julie Ng
+    title: Freelanceer
+    topic: "Mastering email in Ruby"
+    bio: |
+      E-Mail persists after many decades and will also survive the next hyped communication technology. Despite being a pest, E-Mail is also an effective marketing channel and one of the most personal communications you have with your users and customers.
+
+      Responsive HTML email is not as difficult as many think. We'll look at some common problems with solutions for developing bulletproof E-Mails. But most importantly we'll look at how programming workflow is just as important and how I use Ruby to do that.
+    url: http://julie.io/
+    url_title: Julie.io
+    remote: false
+    slides_url:
+    recording_url:
   - handle: ben
     name: Ben Lovell
     title: Freelance Rubyist
@@ -37,6 +50,17 @@ speakers:
       Shout it out - “Ruby is alive!” <3
     url: "https://twitter.com/benlovell"
     url_title: "@benlovell on Twitter"
+    remote: false
+    slides_url:
+    recording_url:
+  - handle: lightning
+    name: Lightning talks!
+    title: "&nbsp;"
+    topic: "More info TBD"
+    bio: |
+      Yes, there will be lightning talks! — Stay tuned for details on how to sign up for a slot!
+    url:
+    url_title:
     remote: false
     slides_url:
     recording_url:
@@ -80,3 +104,8 @@ sponsors:
     url_title: Flowdock.com
     logo_path: "sponsors/flowdock@2x.png"
     logo_height: 50
+  - name: Boogie software
+    url: http://www.boogiesoftware.com/
+    url_title: Boogiesoftware.com
+    logo_path: "sponsors/boogie@2x.png"
+    logo_height: 36
