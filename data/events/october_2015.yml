@@ -69,8 +69,10 @@ program:
   items:
     - time: "18:00 – 18:30"
       description: Welcome
-    - time: "18:30 – 21:30"
+    - time: "18:30 – 21:00"
       description: "Presentations"
+    - time: "21:00 – 21:30"
+      description: "Lighthing talks"
     - time: "starting 21:30"
       description: "Sauna and socializing"
 
