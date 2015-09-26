@@ -9,26 +9,6 @@
     // html.placeholder &
     display: none
 
-  input
-    &.text
-      background: $white
-      border: none
-      outline: none
-      border-radius: 2px
-      +with-font-size
-        padding: relative(6px 10px 7px)
-        margin: relative(0 0 8px)
-
-    &.button
-      @extend %button
-      +with-font-size(16px)
-        padding: relative(8px 20px)
-        line-height: relative(16px)
-
-    &.hidden
-      position: absolute
-      left: -999em
-
   // ---
 
   +media($mobile)

@@ -29,7 +29,7 @@ speakers:
     recording_url:
   - handle: julie
     name: Julie Ng
-    title: Freelanceer
+    title: Freelancer
     topic: "Mastering email in Ruby"
     bio: |
       E-Mail persists after many decades and will also survive the next hyped communication technology. Despite being a pest, E-Mail is also an effective marketing channel and one of the most personal communications you have with your users and customers.
@@ -55,13 +55,14 @@ speakers:
     recording_url:
   - handle: lightning
     name: Lightning talks!
-    title: "&nbsp;"
+    title: "Submit your topic"
     topic: "More info TBD"
     bio: |
       Yes, there will be lightning talks! — Stay tuned for details on how to sign up for a slot!
     url:
     url_title:
     remote: false
+    lighthing_talks: true
     slides_url:
     recording_url:
 
