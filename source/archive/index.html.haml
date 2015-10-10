@@ -27,7 +27,7 @@ body_class: archive page
           %h5
             The Speakers
           %ul
-            - event.speakers.each do |speaker|
+            - event.speakers.reject {|s| s.lighthing_talks }.each do |speaker|
               %li
                 = image_tag "speakers/#{speaker.handle}@2x.jpg", :alt => speaker.name, :class => "portrait"
                 %strong
